@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Intent Prompts",
+  "version": "1.0.0",
+  "description": "Evolving, personal prompt library that helps you fight generic, unthinking AI output. Entirely local and secure.",
+  "icons": {
+    "16": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  },
+  "permissions": ["storage", "sidePanel", "alarms"],
+  "host_permissions": ["https://api.openai.com/*"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "action": {
+    "default_title": "Open Intent Prompts",
+    "default_icon": {
+      "16": "logo.png",
+      "48": "logo.png",
+      "128": "logo.png"
+    }
+  }
+}

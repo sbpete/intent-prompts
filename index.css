@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  overflow: hidden;
+}
+
+/* Ensure text wraps properly at smaller widths */
+* {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Ensure flex items can shrink below their content size */
+.flex > * {
+  min-width: 0;
+}
+
+/* Remove outline from all input elements when focused */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none !important;
+}
+
+/* Animated ellipsis for loading states */
+.animate-ellipsis span {
+  animation: ellipsis-dot 1.4s infinite;
+  opacity: 0;
+}
+
+.animate-ellipsis span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.animate-ellipsis span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.animate-ellipsis span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes ellipsis-dot {
+  0%, 60%, 100% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+}
+
