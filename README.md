@@ -1,3 +1,5 @@
+![Intent Prompts logo](logo.png)
+
 # Intent Prompts
 
 Intent Prompts is a local-first Chrome extension that helps you create, refine, and save high-quality prompts by asking the right questions first.
