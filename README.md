@@ -1,4 +1,4 @@
-![Intent Prompts logo](logo.png)
+![Intent Prompts logo](assets/Intent_Prompts.png)
 
 # Intent Prompts
 
